@@ -39,7 +39,7 @@ MQTTManager.prototype.reConnect = function() {
 						"web_" + Math.random());
 	var options = {
 		timeout: 3,
-		useSSL: false,
+		useSSL: true,
 		cleanSession: true,
 		onSuccess: (function(){
 			this.onConnected();
